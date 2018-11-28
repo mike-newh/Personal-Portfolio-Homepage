@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+p {
+    color: blue;
+}
+
+#coverPhoto {
+    height: 60vh;
+}
+
+#top {
+    min-height: 50vh;
+    height: 65vh;
+    width: 100%;
+    background-image: url('https://dak95nwic4sny.cloudfront.net/73/highlights-of-south-korea-40877782-1521806775-ImageGalleryLightboxLarge.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+
+
+}
+
+#topLayer {
+    min-height: 50vh;
+    height: 65vh;
+    width: 100%;
+    position: absolute;
+    z-index: 6;
+    background: linear-gradient(transparent 80%, #191919)
+
+
+
+}
+
+#splash {
+    background-color: #191919;
+    width: 100%;
+    height: 30vh;
+    margin-top: 3px;
+    position: absolute;
+    top: 64vh;
+    padding-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h2, h3 {
+    font-family: 'Slabo 27px';
+    color: white;
+}
+
+@keyframes arrowDown {
+    0% {color: #FFFF00}
+    12% {color: #FF0000}
+    24% {color: white}
+    36% {color: #00FF00}
+    48% {color: #00FFFF}
+    60% {color: #FF00FF}
+    72% {color: white}
+    84% {color: #9D00FF}
+    96% {color: #FFFF00}
+
+}
+
+#downChevron {
+    font-size: 40px;
+    margin-top: 3vw;
+    color: white;
+    position: absolute;
+    bottom: 3vh;
+    animation-name: arrowDown;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+
+.splashText {
+    color: white;
+    text-align: center;
+}
+
+#buttonRack {
+    position: absolute;
+    top: 10px;
+    height: 30px;
+    width: 40%;
+    left: 5%;
+    z-index: 7;
+    margin: 0px;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.topBtn {
+    width: 100px;
+    height: 100%;
+    line-height: 30px;
+    text-align: center;
+    box-shadow: 1px 1px 5px 1px black;
+    background-color: #191919;
+    color: white;
+    font-size: 20px;
+    font-family: 'Slabo 27px';
+    border-radius: 3px;
+}
+
+.topBtn:hover {
+    box-shadow: 1px 1px 5px 1px white;
+    background-color: white;
+    color: #191919;
+    transition: 0.2s ease-in-out;
+}
+
+
+
+#portfolio {
+    padding-top: 15vh;
+    background-color: #191919;
+    width: 100%;
+    position: absolute;
+    top: 100vh;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.portItemFrame {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    border-style: solid;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.portItemFrameOffset {
+    margin-left: 3vw;
+}
+.portItemFrameInset {
+    margin-left: -3vw;
+}
+
+.portImg {
+    height: auto;
+    width: 30vw;
+}
+
+.portArrows {
+    font-size: 50px;
+    margin-right: 5vw;
+}
+
+.portImgArrowBundle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: red;
+}
+
+.portTextFrame {
+    border-style: solid;
+    border-color: blue;
+
+    width: 40%;
+}
