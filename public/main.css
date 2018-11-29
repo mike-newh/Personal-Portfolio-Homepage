@@ -3,12 +3,10 @@
 body {
     margin: 0px;
     padding: 0px;
+    font-family: 'Slabo 27px';
 }
 
 
-p {
-    color: blue;
-}
 
 #coverPhoto {
     height: 60vh;
@@ -66,6 +64,15 @@ h3 {
 
 h2, h3 {
     font-family: 'Slabo 27px';
+    color: white;
+}
+
+h4 {
+    font-size: 20px;
+    color: white;
+}
+
+p {
     color: white;
 }
 
@@ -154,25 +161,27 @@ h2, h3 {
     align-items: center;
     justify-content: space-evenly;
     width: 80%;
-    border-style: solid;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 .portItemFrameOffset {
-    margin-left: 3vw;
+    margin-left: 0vw;
 }
 .portItemFrameInset {
-    margin-left: -3vw;
+    margin-left: -0vw;
 }
 
 .portImg {
     height: auto;
     width: 30vw;
+    box-shadow: 1px 1px 2px 2px;
+    border-radius: 4px;
+    opacity:0.8;
 }
 
 .portArrows {
     font-size: 50px;
-    margin-right: 5vw;
+    margin-right: 3vw;
 }
 
 .portImgArrowBundle {
@@ -180,13 +189,26 @@ h2, h3 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-style: solid;
-    border-color: red;
 }
 
 .portTextFrame {
-    border-style: solid;
-    border-color: blue;
-
     width: 40%;
+}
+
+#portArrowColG {
+    color: #00FF00;
+    
+}
+
+#portArrowColP {
+    color: #9D00FF 
+}
+
+#portArrowColR {
+    color: #00FFFF;
+}
+#portArrowColC {
+    color: #FF0000; 
+
+    
 }
