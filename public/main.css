@@ -86,7 +86,6 @@ p {
     72% {color: white}
     84% {color: #9D00FF}
     96% {color: #FFFF00}
-
 }
 
 #downChevron {
@@ -144,11 +143,21 @@ p {
 
 
 #portfolio {
+    top: 100vh;
+
+}
+
+#personal {
+    z-index: -1;
+    bottom: -65vh;
+    height: 50vh;
+}
+
+.standardDiv {
     padding-top: 15vh;
     background-color: #191919;
     width: 100%;
     position: absolute;
-    top: 100vh;
     z-index: 0;
     display: flex;
     flex-direction: column;
@@ -211,4 +220,33 @@ p {
     color: #FF0000; 
 
     
+}
+
+@keyframes lineBreak {
+    0% {background: #FFFF00}
+    12% {background: #FF0000}
+    24% {background: white}
+    36% {background: #00FF00}
+    48% {background: #00FFFF}
+    60% {background: #FF00FF}
+    72% {background: white}
+    84% {background: #9D00FF}
+    96% {background: #FFFF00}
+}
+
+.divSplit {
+    width: 100%;
+    height: 5px;
+    z-index: 99;
+    position: absolute;
+    bottom: 5px;
+    box-shadow: 2px 2px 3px 3px;
+    animation-name: lineBreak;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+
+.divSpacing {
+    height: 10vh;
 }
